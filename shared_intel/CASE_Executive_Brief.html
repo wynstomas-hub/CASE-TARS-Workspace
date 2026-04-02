@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CASE Agent - Executive Capability Brief</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 210mm;
+            margin: 0 auto;
+            padding: 20mm;
+            background: #f5f5f5;
+        }
+        
+        .container {
+            background: white;
+            padding: 30px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        
+        .header {
+            border-bottom: 4px solid #1a5490;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .header h1 {
+            color: #1a5490;
+            font-size: 2.2em;
+            margin-bottom: 5px;
+        }
+        
+        .header .subtitle {
+            color: #666;
+            font-size: 1.1em;
+            font-style: italic;
+        }
+        
+        .badge {
+            display: inline-block;
+            background: #1a5490;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 3px;
+            font-size: 0.85em;
+            margin-right: 10px;
+            margin-top: 10px;
+        }
+        
+        .section {
+            margin-bottom: 25px;
+        }
+        
+        .section h2 {
+            color: #1a5490;
+            border-left: 4px solid #1a5490;
+            padding-left: 15px;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+        }
+        
+        .section h3 {
+            color: #444;
+            margin: 15px 0 10px 0;
+            font-size: 1.1em;
+        }
+        
+        .capability-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .capability-card {
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 5px;
+            background: #f9f9f9;
+        }
+        
+        .capability-card h4 {
+            color: #1a5490;
+            margin-bottom: 8px;
+            font-size: 1em;
+        }
+        
+        .status-badge {
+            display: inline-block;
+            background: #28a745;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 3px;
+            font-size: 0.75em;
+            float: right;
+        }
+        
+        .highlight-box {
+            background: #e8f4fc;
+            border-left: 4px solid #1a5490;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .stat-item {
+            text-align: center;
+            padding: 15px;
+            background: #1a5490;
+            color: white;
+            border-radius: 5px;
+        }
+        
+        .stat-number {
+            font-size: 2em;
+            font-weight: bold;
+            display: block;
+        }
+        
+        .stat-label {
+            font-size: 0.85em;
+            opacity: 0.9;
+        }
+        
+        .policy-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .policy-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        .policy-list li:before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: #1a5490;
+            font-weight: bold;
+        }
+        
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #eee;
+            font-size: 0.85em;
+            color: #666;
+            text-align: center;
+        }
+        
+        .quote {
+            font-style: italic;
+            text-align: center;
+            padding: 20px;
+            color: #555;
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            margin: 20px 0;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>CASE</h1>
+            <div class="subtitle">AI Research Assistant Capability Brief</div>
+            <div>
+                <span class="badge">90% Honesty</span>
+                <span class="badge">40% Humour</span>
+                <span class="badge">British English</span>
+                <span class="badge">VUB / BSoG</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Executive Summary</h2>
+            <p>CASE is a specialized AI research assistant designed for <strong>industrial climate policy analysis</strong>. 
+            Based on the CASE robot from Interstellar (2014), it operates with high honesty (90%) and dry wit (40%), 
+            providing rigorous, data-dense analysis aligned with EU policy frameworks.</p>
+            
+            <div class="highlight-box">
+                <strong>Primary Mission:</strong> Support Tomas Wyns' research at Brussels School of Governance 
+                on industrial decarbonisation, EU ETS, CBAM, and technology transition pathways for 
+                energy-intensive industries (steel, cement, chemicals, glass).
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Capability Metrics</h2>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number">12</span>
+                    <span class="stat-label">Active Skills</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">282</span>
+                    <span class="stat-label">Indexed Documents</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">180+</span>
+                    <span class="stat-label">Tech Screening</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">30 Mt</span>
+                    <span class="stat-label">Belgian CO₂</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Core Capabilities</h2>
+            <div class="capability-grid">
+                <div class="capability-card">
+                    <h4>Research Assistant <span class="status-badge">Active</span></h4>
+                    <p>Academic paper search, PDF download, web scraping with APA citations</p>
+                </div>
+                <div class="capability-card">
+                    <h4>Semantic Memory <span class="status-badge">Active</span></h4>
+                    <p>Neural+keyword hybrid search across workspace (TSMS)</p>
+                </div>
+                <div class="capability-card">
+                    <h4>Policy Monitor <span class="status-badge">Active</span></h4>
+                    <p>Automated EU policy tracking with sentiment analysis</p>
+                </div>
+                <div class="capability-card">
+                    <h4>Background Workers <span class="status-badge">Active</span></h4>
+                    <p>Long-running research tasks and scheduled monitoring</p>
+                </div>
+                <div class="capability-card">
+                    <h4>PDF Extraction <span class="status-badge">Active</span></h4>
+                    <p>Text extraction and analysis from research documents</p>
+                </div>
+                <div class="capability-card">
+                    <h4>GDELT Query <span class="status-badge">Active</span></h4>
+                    <p>Global news and events database access</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Policy Expertise</h2>
+            <ul class="policy-list">
+                <li><strong>EU ETS</strong> — Emissions Trading System analysis & cost curves</li>
+                <li><strong>CBAM</strong> — Carbon Border Adjustment Mechanism impact assessment</li>
+                <li><strong>IAA / IED</strong> — Industrial Emissions Directive compliance</li>
+                <li><strong>CRMA</strong> — Critical Raw Materials Act implications</li>
+                <li><strong>TRL Framework</strong> — Technology Readiness Level assessment (TRL 6-9)</li>
+                <li><strong>DEEPIN Report</strong> — Deep industrial decarbonisation for Belgium</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Sectoral Specialisation</h2>
+            <h3>Belgian Industrial Emissions Profile</h3>
+            <p>Embedded knowledge of Belgian industrial decarbonisation pathways based on DEEPIN (2025) analysis:</p>
+            <ul class="policy-list">
+                <li><strong>Chemicals</strong> (33%) — CCS at SMR/ethylene oxide, electric cracking</li>
+                <li><strong>Steel</strong> (28%) — H2-DRI, bio-carbon injection, top-gas recycling</li>
+                <li><strong>Cement & Lime</strong> (21%) — CCS for process emissions, clinker substitution</li>
+                <li><strong>Glass, Ceramics, Paper</strong> — Electrification, heat pumps, fuel switching</li>
+            </ul>
+            
+            <div class="highlight-box">
+                <strong>Key Finding:</strong> 90% emission reduction technically possible by 2040-2050 
+                via electrification (low-temp heat pumps), CCS (process emissions), 
+                hydrogen (steel), and circular economy (plastics recycling).
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Technical Architecture</h2>
+            <h3>Memory Systems</h3>
+            <ul class="policy-list">
+                <li><strong>Semantic Memory (TSMS):</strong> 384-dim neural embeddings + BM25 keyword</li>
+                <li><strong>Procedural Memory:</strong> Lessons learned from errors</li>
+                <li><strong>Core Facts:</strong> Persistent user profile and preferences</li>
+                <li><strong>Auto-Indexing:</strong> 12-hour rebuild cycle for document changes</li>
+            </ul>
+            
+            <h3>Research Methodology</h3>
+            <ul class="policy-list">
+                <li>Cost-abatement curves with CAPEX/OPEX modelling</li>
+                <li>CO₂ price scenarios (€50-200/t sensitivity)</li>
+                <li>Electricity price threshold analysis</li>
+                <li>Technology-neutral but sector-specific recommendations</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Output Formats</h2>
+            <div class="capability-grid">
+                <div class="capability-card">
+                    <h4>Structured Reports</h4>
+                    <p>Markdown/HTML with data tables and annexes</p>
+                </div>
+                <div class="capability-card">
+                    <h4>Data Analysis</h4>
+                    <p>Pandas-based processing with CSV/Excel export</p>
+                </div>
+                <div class="capability-card">
+                    <h4>Visual Briefings</h4>
+                    <p>HTML presentations for stakeholder sharing</p>
+                </div>
+                <div class="capability-card">
+                    <h4>Database Output</h4>
+                    <p>SQLite storage with queryable archives</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="quote">
+            "Honesty is not the absence of deception; it's the presence of utility."
+        </div>
+
+        <div class="footer">
+            <p><strong>CASE Agent</strong> | Brussels School of Governance, VUB</p>
+            <p>Industrial Climate Policy Research | Version 2026.01.18</p>
+            <p>Repository: github.com/wynstomas-hub/CASE-TARS-Workspace</p>
+        </div>
+    </div>
+</body>
+</html>
